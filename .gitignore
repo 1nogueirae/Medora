@@ -4,9 +4,10 @@ jspm_packages/
 web_modules/
 
 # Diretórios de build (ajuste para 'out' se for Next.js, ou 'dist' se for Vite)
-/build/
-/dist/
-dist-ssr
+frontend/build/
+frontend/dist/
+frontend/dist-ssr
+frontend/.vite
 
 # Arquivos de log
 logs
@@ -50,3 +51,36 @@ Thumbs.db
 *.sln
 *.sw?
 *.local
+
+# Suggested additions
+# Build outputs
+dist/
+build/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Package artifacts
+*.tgz
+
+# Yarn PnP
+.pnp.*
+
+# IDE files
+*.iml
+
+# Temp / uploads
+tmp/
+uploads/
+
+# OS thumbnails
+ehthumbs.db
+
+# pnpm store (optional)
+.pnpm-store/
