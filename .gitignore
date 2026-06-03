@@ -6,6 +6,7 @@ web_modules/
 # Diretórios de build (ajuste para 'out' se for Next.js, ou 'dist' se for Vite)
 /build/
 /dist/
+dist-ssr
 
 # Arquivos de log
 logs
@@ -13,6 +14,8 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 pids
 *.pid
 *.seed
@@ -36,3 +39,14 @@ pids
 # Sistema operacional
 .DS_Store
 Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.local
