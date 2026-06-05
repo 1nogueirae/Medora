@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.json({ message: 'Login get' });
-});
+const userController = require('../../../controllers/user-login.controller');
+const validateUserLogin = require('../../../middleware/user-login.middleware');
 
-router.post('/', (req, res) => {
-    res.json({ message: 'Login post under development' });
-
-})
+router.post(
+    '/',
+    validateUserLogin,
+    userController.login
+);
 
 module.exports = router;
